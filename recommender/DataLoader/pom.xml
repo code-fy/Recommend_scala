@@ -10,6 +10,31 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>DataLoader</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-core_2.11</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql_2.11</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>casbah-core_2.11</artifactId>
+            <version>${casbah.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mongodb.spark</groupId>
+            <artifactId>mongo-spark-connector_2.11</artifactId>
+            <version>${mongodb-spark.version}</version>
+        </dependency>
+    </dependencies>
+
 
 
 </project>
