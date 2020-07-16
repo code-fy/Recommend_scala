@@ -9,6 +9,7 @@
         <module name="StatisticRecommender" />
         <module name="DataLoader" />
         <module name="OfflineRecommender" />
+        <module name="OnlineRecommender" />
       </profile>
     </annotationProcessing>
   </component>

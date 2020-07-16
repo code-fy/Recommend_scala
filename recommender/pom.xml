@@ -15,6 +15,7 @@
         <module>DataLoader</module>
         <module>StatisticRecommender</module>
         <module>OfflineRecommender</module>
+        <module>OnlineRecommender</module>
     </modules>
     <dependencyManagement>
         <dependencies>
