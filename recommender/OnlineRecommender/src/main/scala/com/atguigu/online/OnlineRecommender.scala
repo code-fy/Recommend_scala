@@ -9,27 +9,6 @@ import org.apache.spark.streaming.kafka010.{ConsumerStrategies, KafkaUtils, Loca
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 import redis.clients.jedis.Jedis
 
-/**
- *
- * windows下Kafka启动：
- * .\bin\windows\zookeeper-server-start.bat  .\config\zookeeper.properties
- * .\bin\windows\kafka-server-start.bat .\config\server.properties
- * 创建topic：
- * .\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic recommender
- * 创建生产者：
- * .\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic recommender
- *
- * Windows下redis启动：
- * redis-server.exe redis.windows.conf
- *
- * Windows下Flume启动：
- * bin\flume-ng.cmd agent -n agent -c conf -f conf\log-kafka.properties -property  "flume.root.logger=INFO,console"
- * 这里有点小bug：flume没有收取日志，我按照csdn上的文章改动过：conf/ flume-env.ps1  flume-ng.ps1 log-kafka.properties  bin下 flume-ng.ps1
- *
- * @author pengchenyu
- * @date 2020/6/30 10:03
- */
-
 
 // 定义一个连接助手对象，建立到redis和mongodb的连接
 object ConnHelper extends Serializable{
